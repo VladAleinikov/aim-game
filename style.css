@@ -40,7 +40,8 @@ body{
       transition: .5s;
 }
 .screen__btn:hover{
-      padding: 10px 15px;
+      color: #5291ee;
+      border: 1px solid #5291ee;
 }
 .screen.active{
       top: 0;
@@ -50,6 +51,9 @@ body{
 }
 .scren__field{
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-top: 20px;
       width: 500px;
       height: 500px;
@@ -58,8 +62,9 @@ body{
       box-shadow: 1px 1px 2px #fff, inset 1px 1px 2px #fff;
 }
 .mark{
+      cursor: pointer;
       position: absolute;
-      background: blue;
+      background: rgb(52, 52, 58);
       border-radius: 100%;
 }
 .back__btn{
@@ -73,4 +78,19 @@ body{
       padding: 5px;
       border-radius: 100%;
       border: 1px solid #fff;
+      transition: .5s;
+}
+.back__btn path{
+      fill: #ffffff;
+      transition: .5s;
+}
+.back__btn:hover{
+      border: 1px solid #5291ee;
+}
+.back__btn:hover path{
+      fill: #5291ee;
+}
+.field__finish{
+      color: #ffffff;
+      text-align: center;
 }

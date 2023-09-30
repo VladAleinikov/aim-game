@@ -11,19 +11,15 @@
 <body>
       <div class="screen active">
             <h2 class="screen__title">Aim Training</h2>
-            <button class="screen__btn">Начать игру</button>
-            <div class="back__btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                        <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" fill="#fff"/>
-                  </svg>
-            </div>
+            <button class="screen__btn" id="start-game">Начать игру</button>
       </div>
       <div class="screen">
             <h2 class="screen__title">Выберете время</h2>
             <div class="screen__btns">
-                  <button class="screen__btn" time="10">10 сек</button>
-                  <button class="screen__btn" time="20">20 сек</button>
-                  <button class="screen__btn" time="30">30 сек</button>
+                  <button class="screen__btn choose-time" time="10">10 сек</button>
+                  <button class="screen__btn choose-time" time="20">20 сек</button>
+                  <button class="screen__btn choose-time" time="30">30 сек</button>
+                  <button class="screen__btn choose-time" time="60">60 сек</button>
             </div>
             <div class="back__btn">
                   <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
@@ -32,9 +28,8 @@
             </div>
       </div>
       <div class="screen">
-            <h3 class="screen__time">Осталось: <span id="time">10</span></h3>
-            <div class="scren__field">
-                  <div class="mark"></div>
+            <h3 class="screen__time">Осталось: <span id="timer">10 сек</span></h3>
+            <div class="scren__field" id="scren__field">
             </div>
             <div class="back__btn">
                   <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
